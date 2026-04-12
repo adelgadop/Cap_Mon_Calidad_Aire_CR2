@@ -1,4 +1,4 @@
-# Curso Internacional "Capacitación sobre Monitoreo y Análisis de la Calidad del Aire
+# Curso Internacional "Capacitación sobre Monitoreo y Análisis de la Calidad del Aire"
 Este repositorio corresponde al [curso](https://www.cr2.cl/curso-capacitacion-sobre-monitoreo-y-analisis-de-la-calidad-del-aire/) impartido en la Facultad de Ciencias Físicas y Matemáticas (FCFM) de la Universidad de Chile, en el campus Beauchef, Santiago de Chile, entre los días 26 y 29 de mayo de 2026. El curso es organizado por el Centro de Ciencia del Clima y la Resilencia (CR)2 de la Universidad de Chile, en colaboración con la Organización Meteorológica Mundial (OMM).
 
 El curso aborda los fundamentos de la calidad del aire, el uso de observaciones, la evaluación de los modelos numéricos de química atmosférica, sus requisitos y aplicaciones en América Latina y el Caribe. El contenido del curso servirá de base para el desarrollo de sistemas de pronóstico y de diseño de políticas basados en resultados de simulación validados con observaciones en superficie y en altura. 
