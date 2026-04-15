@@ -1,8 +1,9 @@
+# conda activate py3.8 (in AMANAN)
+
 import requests
 import pandas as pd
 import datetime as dt
 from bs4 import BeautifulSoup
-
 #%%
 
 def my_to_datetime(date_str):

@@ -1,5 +1,5 @@
 # Downloading meteorological and air quality parameters from CETESB stations
-# conda activate lapat
+# conda activate py3.8
 import numpy as np
 import pandas as pd
 import qualar as qr
