@@ -17,6 +17,8 @@ Brasseur, Guy P. 2025. The Air and Its Secrets: A History of Atmospheric Science
 
 Brasseur, G.P., Jacob, D.J., 2017. Modeling of Atmospheric Chemistry, First. ed. Cambridge University Press. https://doi.org/10.1017/9781316544754
 
+Emery, C., Liu, Z., Russell, A.G., Odman, M.T., Yarwood, G., Kumar, N., 2017. Recommendations on statistics and benchmarks to assess photochemical model performance. J. Air Waste Manage. Assoc. 67, 582–598. https://doi.org/10.1080/10962247.2016.1265027
+
 Gavidia-Calderón, M., Schuch, D., Vara-Vela, A., Inoue, R., Freitas, E.D., Albuquerque, T.T. de A., Zhang, Y., Andrade, M. de F., Bell, M.L., 2024. Air quality modeling in the metropolitan area of São Paulo, Brazil: A review. Atmos. Environ. 319, 120301. https://doi.org/10.1016/j.atmosenv.2023.120301
 
 World Meteorological Organization (WMO), 2020. Training Materials and Best Practices for Chemical Weather/Air Quality Forecasting. Report. Weather Climate Water. ETR-26. Geneva. https://library.wmo.int/idurl/4/54300
