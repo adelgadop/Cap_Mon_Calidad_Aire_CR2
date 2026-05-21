@@ -51,10 +51,13 @@ def load_inmet_data(filepath: str,
     comment2 = "# date,°C,%,hPa,mm,m/s,degree"
     comment1 = "# Sao Paulo Mirante (A701), -23.496289, -46.620067, 785.64 m"
     df = df.loc[:, columns].set_index('date')
+    df.to_pickle('../post/mirante_aug_sep_2024.pkl')
     # Export to CSV with comments:
     if to_csv:
         with open('../post/mirante_aug_sep_2024.csv', 'w') as f:
             f.write(comment1 + '\n')
             f.write(comment2 + '\n')
-            df.to_csv(f, index=True, header=True)    
+            df.to_csv(f, index=True, header=True)
+            
+        
     return df

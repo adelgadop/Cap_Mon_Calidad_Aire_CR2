@@ -1,0 +1,16 @@
+name: monet
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - ipython
+  - wrf-python
+  - monet
+  - monetio
+  - cartopy
+  - pandas
+  - numpy
+  - xarray
+  - pseudonetcdf
+  - matplotlib
