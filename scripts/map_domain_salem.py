@@ -1,7 +1,7 @@
 # conda activate wrf_env  (in Macbook Pro)
 import salem
 import matplotlib.pyplot as plt
-import geobr
+#import geobr
 import cartopy.feature as cfeature
 
 # Namelist
@@ -23,7 +23,7 @@ masp = masp.dissolve(by='State')
 #masp['geometry'] = masp.simplify(tolerance=0.001, preserve_topology=False).simplify_coverage(0.001, simplify_boundary=False)
 
 # Reading a shapefile of São Paulo state
-sp = geobr.read_state(code_state='SP', year=2019)
+#sp = geobr.read_state(code_state='SP', year=2019)
 
 # Plot
 # ----
@@ -57,5 +57,5 @@ maps[0].set_text(-46.7, -23.6,'MASP',
 maps[0].visualize(ax=ax)
 fig.savefig('../figs/map_domain_sp.png', dpi=300,
             bbox_inches='tight', format='png')
-#plt.show()
+plt.show()
 
