@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import cartopy.feature as cfeature
 
 # Namelist
-fpath = '../namelists/namelist.wps.sp'
+fpath = '../namelists/namelist.wps.masp'
 fname = '../figs/MunRM07.shp'
 g, maps = salem.geogrid_simulator(fpath, 
                                   map_kwargs={'countries':False})
