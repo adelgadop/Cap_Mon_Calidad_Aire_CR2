@@ -15,3 +15,4 @@ dependencies:
   - pseudonetcdf
   - matplotlib
   - windrose
+  - geopandas
