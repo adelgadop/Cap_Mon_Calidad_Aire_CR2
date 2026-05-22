@@ -39,10 +39,10 @@ maps[0].set_shapefile(masp, lw=1, color='b',
                       oceans = False,
                       zorder = 2)
 
-maps[0].set_shapefile(sp, lw=0.5, color='k',
-                      countries = False,
-                      oceans = False,
-                      zorder = 1)
+# maps[0].set_shapefile(sp, lw=0.5, color='k',
+#                       countries = False,
+#                       oceans = False,
+#                       zorder = 1)
 
 maps[0].set_text(-49.0,-21.25,'São Paulo state',
                  color = 'k',
