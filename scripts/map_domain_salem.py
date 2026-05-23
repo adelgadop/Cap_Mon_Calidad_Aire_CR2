@@ -6,15 +6,22 @@ import cartopy.feature as cfeature
 
 # Namelist
 fpath = '../namelists/namelist.wps.masp'
-fname = '../figs/MunRM07.shp'
+
 g, maps = salem.geogrid_simulator(fpath, 
-                                  map_kwargs={'countries':False})
+                                  map_kwargs={'countries':True})
 
 # MASP shapefile
 # --------------
+fname = '../figs/MunRM07.shp'
 masp = salem.read_shapefile(fname).set_crs(epsg=4326)
 masp['State'] = 'SP' 
 masp = masp.dissolve(by='State')
+
+# São Paulo state shapefile
+# -------------------------
+fname = '../figs/sp.shp'
+sp   = salem.read_shapefile(fname)#.set_crs(epsg=4326)
+
 #rma = geobr.read_metro_area()
 #masp = (rma
 #        .loc[rma.name_metro == 'RM São Paulo',:]
@@ -30,8 +37,8 @@ masp = masp.dissolve(by='State')
 fig, ax = plt.subplots()
 maps[0].set_rgb(natural_earth='hr')
 maps[0].set_scale_bar()
-maps[0].set_text(-49.1, -20.5, 'd01', color = 'k', fontweight = 'bold',   fontsize=10)
-maps[0].set_text(-47.3, -22.7, 'd02', color = 'k', fontweight = 'bold',    fontsize=8)
+maps[0].set_text(-49.2, -19.0, 'd01', color = 'k', fontweight = 'bold',   fontsize=10)
+maps[0].set_text(-48.0, -22.2, 'd02', color = 'k', fontweight = 'bold',    fontsize=8)
 #maps[0].set_text(-47.2, -23.3, 'd03', color = 'k', #fontweight = #                 fontsize=5)
 
 maps[0].set_shapefile(masp, lw=1, color='b',
@@ -39,10 +46,10 @@ maps[0].set_shapefile(masp, lw=1, color='b',
                       oceans = False,
                       zorder = 2)
 
-# maps[0].set_shapefile(sp, lw=0.5, color='k',
-#                       countries = False,
-#                       oceans = False,
-#                       zorder = 1)
+maps[0].set_shapefile(sp, lw=0.5, color='k',
+                       countries = False,
+                       oceans = False,
+                       zorder = 1)
 
 maps[0].set_text(-49.0,-21.25,'São Paulo state',
                  color = 'k',
@@ -57,5 +64,5 @@ maps[0].set_text(-46.7, -23.6,'MASP',
 maps[0].visualize(ax=ax)
 fig.savefig('../figs/map_domain_sp.png', dpi=300,
             bbox_inches='tight', format='png')
-plt.show()
+#plt.show()
 
