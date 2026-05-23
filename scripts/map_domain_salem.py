@@ -64,5 +64,5 @@ maps[0].set_text(-46.7, -23.6,'MASP',
 maps[0].visualize(ax=ax)
 fig.savefig('../figs/map_domain_sp.png', dpi=300,
             bbox_inches='tight', format='png')
-#plt.show()
+plt.show()
 
